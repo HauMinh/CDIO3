@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/css/admin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            width: 25px;
+            height: 25px;
+        }
+
+        .auto-style6 {
+            width: 99%;
+        }
+    </style>
+</head>
+<body>
+   <form id="form1" runat="server">
+   <div id="container">
+
+    
+        <div id="menu">
+        <ul >
+                <li>
+                    <a id="link1" href="QLSanPham.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-mobile"></i>&nbsp Sản phẩm</a>
+                </li>
+                <li >
+                    <a id="link2" href="QLDanhMuc.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-list"></i>&nbsp Danh mục sản phẩm</a>
+                </li>                
+                <li  >
+                    <a id="link3" href="Quanlydonhang.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-cart-plus"></i>&nbsp Đơn đặt hàng</a>
+                </li>
+                <li >
+                    <a id="link4" href="QLDanhMuc.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-gift"></i>&nbsp Khuyến mãi</a>
+                </li>
+                <li >
+                    <a id="link5" href="QLDanhMuc.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-user"></i>&nbsp Khách hàng</a>
+                </li>
+                <li >
+                    <a id="link6" href="QLBinhLuan.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-comments-o"></i>&nbsp  Bình luận</a>
+                </li>
+                <li >
+                    <a id="link7" href="TaiKhoan.aspx" onClick="setActiveLink(this.id);">
+                        <i class="fa fa-cog"></i>&nbsp Tài khoản</a>
+                </li>
+              
+           </ul>   
+        </div >
+   
+    
+    
+    
+    <div class="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   </div>
+       
+   </form>
+    <script>
+        function setActiveLink(setActive){
+            var links = document.querySelectorAll("#menu a");
+            Array.prototype.map.call(links, function(e) {
+            e.className = "";
+            if (e.id == setActive)
+            e.className = "active";
+            })
+        }
+    </script>
+</body>
+</html>

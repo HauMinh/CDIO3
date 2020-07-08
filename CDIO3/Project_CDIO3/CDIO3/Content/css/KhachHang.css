@@ -1,0 +1,169 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 300;
+    color: black;
+    line-height: 1.254;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    color: black;
+}
+
+
+
+#containerQL {
+    padding-top: 50px;
+    position: relative;
+    top: auto;
+    width: 100%;
+}
+
+.headerr {
+    position: fixed;
+    width: 100%;
+    background-color: #1f568b;
+    height: 40px;
+    top: 0;
+    line-height: 40px;
+}
+
+.tieude {
+    float: left;
+    width: 300px;
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+    .tieude a {
+        color: white;
+        font-size: 20px;
+        display: block;
+    }
+
+.themsp {
+    font-size: 15px;
+    float: left;
+    padding: 0 3em;
+}
+
+    .themsp a {
+        font-weight: bold;
+        color: white;
+        display: block;
+    }
+
+        .themsp a:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+.tim {
+    float: left;
+    font-size: 14px;
+    padding: 0 3em;
+}
+
+
+#menu1 {
+    position: fixed;
+    width: 100%;
+    background-color: #1f568b;
+    height: 40px;
+    top: 0;
+    /*left: 260px;*/
+}
+    /*----Menu----*/
+    #menu1 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+        #menu1 ul li {
+            line-height: 40px;
+            height: 40px;
+            padding: 0;
+            display: inline-table;
+            width: 35%;
+            transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+        }
+
+            #menu1 ul li a {
+                color: #f1f1f1;
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+                #menu1 ul li a:hover {
+                    background-color: #f1f1f1;
+                    color: #333;
+                }
+
+#contentQL {
+    padding: 3em 1em;
+}
+
+#them {
+    display: inline-table;
+    text-align: center;
+}
+
+    #them a {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+        #them a input {
+            width: 300px;
+            height: 30px;
+            font-size: 14px;
+            margin-bottom: 1em;
+        }
+
+.homeql {
+    margin-top: 1em;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    position: relative;
+    text-align: center;
+}
+
+    .homeql:hover {
+        margin-top: 0em;
+    }
+
+#tensp {
+    padding: 0 1em;
+}
+
+.homebtn {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 2em;
+    text-align: left;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.homeql:hover .homebtn {
+    opacity: 1;
+}
